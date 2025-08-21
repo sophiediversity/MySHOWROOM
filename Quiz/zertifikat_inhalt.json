@@ -1,0 +1,13 @@
+{
+    "titel": "Lernzertifikat",
+    "einleitung": "Dieses Zertifikat bestätigt, dass",
+    "abschluss": "erfolgreich das interaktive Lernquiz absolviert hat.",
+    "empfehlungen_titel": "Empfehlungen für selbstorganisiertes Lernen:",
+    "empfehlungen": [
+        "Reflektiere regelmäßig dein Wissen",
+        "Arbeite mit Skizzen, Farben und Visualisierungen",
+        "Plane Erholungsphasen bewusst ein",
+        "Verbinde neues Wissen mit Praxisbeispielen"
+    ],
+    "logoPlatzhalter": "[Logo hier]"
+}

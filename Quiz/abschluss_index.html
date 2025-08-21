@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level-Up Quiz-Game</title>
+    <link rel="icon" type="image/x-icon" href="../001favicon/Sophie Diversity.jpg">
+    <!-- <link href="../my_bplaced/assets/09 font/Gilda_Display/GildaDisplay-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="../my_bplaced/assets/09 font/LeagueSpartan-Bold.otf" rel="stylesheet" type="text/css"> -->
+   
+    <link rel="stylesheet" href="../../css/styles.css">
+     <link rel="stylesheet" href="abschluss_style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Level-Up Quiz Game</h1><br><br>
+        <div id="quiz-container"><br>
+            <h2 id="level-title"></h2><br><br>
+            <div id="question"></div><br>
+            <div id="options"></div><br>
+            <div class="next-btn-container">
+                <button id="next-btn" disabled>Weiter</button>
+            </div>
+        </div>
+
+        <div id="certificate-section" class="hidden">
+            <h3>Zertifikat herunterladen</h3>
+            <label for="userName">Dein Name:</label><br>
+            <input type="text" id="userName" placeholder="Name eingeben" /><br><br>
+            <button id="downloadCertBtn">PDF herunterladen</button>
+        </div>
+
+        <!-- Avatar-Modal -->
+        <div id="custom-alert" class="modal hidden">
+            <div class="modal-content">
+                <img id="avatar-img" src="Avatar/avatar01.png" alt="Avatar" style="width: 100px; height: auto;" />
+                <p id="modal-message"></p>
+                <button id="modal-ok-btn">OK</button>
+            </div>
+        </div>
+    </div>
+    <button id="restart-btn">Quiz neu starten</button>
+    <!-- Fortschrittsanzeige (fest unten) -->
+    <div id="progress-container">
+        <div id="score-display">Frage 1 von 10</div>
+        <div id="progress-bar-wrapper">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+
+
+
+    <a href="../index.html" class="btn btn-secondary" style="display: inline-block; margin-top: 20px;">Zur Startseite</a>
+
+
+</body>
+
+</html>
+<!-- <script src="abschluss_script.js"></script> -->
+<script src="abschluss_script.js"></script>
+</body>
+
+</html>

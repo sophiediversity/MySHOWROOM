@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level-Up Quiz-Game</title>
+    <link rel="stylesheet" href="abschluss_style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Level-Up Quiz Game</h1>
+        <div id="quiz-container">
+            <h2 id="level-title"></h2>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div class="next-btn-container">
+                <button id="next-btn" disabled>Weiter</button>
+            </div>
+        </div>
+
+        <div id="certificate-section" class="hidden">
+            <h3>Zertifikat herunterladen</h3>
+            <label for="userName">Dein Name:</label>
+            <input type="text" id="userName" placeholder="Name eingeben" />
+            <button id="downloadCertBtn">PDF herunterladen</button>
+        </div>
+
+        <div id="custom-alert" class="modal hidden">
+            <div class="modal-content">
+                <img id="avatar-img" src="avatar.png" alt="Avatar" />
+                <p id="modal-message"></p>
+                <button id="modal-ok-btn">OK</button>
+            </div>
+        </div>
+
+        <button id="show-cert-btn" class="hidden">📜 Zertifikat anzeigen</button>
+        <button id="restart-quiz-btn">Quiz neu starten</button>
+        <button id="reset-all-btn">Quiz + Zertifikat zurücksetzen</button>
+    </div>
+
+    <div id="progress-container">
+        <div id="score-display">Frage 1 von 10</div>
+        <div id="progress-bar-wrapper">
+            <div id="progress-bar"></div>
+        </div>
+    </div>
+
+    <script src="abschluss_script.js"></script>
+</body>
+
+</html>

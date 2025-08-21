@@ -1,0 +1,131 @@
+[{
+        "level": 1,
+        "title": "Lerntypen & Selbstwahrnehmung",
+        "avatar": "avatar_level1.png",
+        "avatarSuccess": "avatar_level1_happy.png",
+        "avatarFail": "avatar_level1_sad.png",
+        "questions": [{
+                "question": "Wenn Du neue Inhalte besser verstehst, wenn Du die Kernaussagen laut wiederholst, welchem Lerntyp gehörst Du wahrscheinlich an?",
+                "options": ["Visueller Lerntyp", "Auditiver Lerntyp", "Kinästhetischer Lerntyp"],
+                "answer": 1
+            },
+            {
+                "question": "Was ist typisch für den visuellen Lerntyp?",
+                "options": ["Informationen durch Bewegung und praktische Übungen aufnehmen", "Lernen durch Bilder und Grafiken", "Lernen durch Diskussionen"],
+                "answer": 1
+            },
+            {
+                "question": "Welche Methode passt gut zum auditiven Lerntyp?",
+                "options": ["Lernvideos ohne Ton", "Podcasts, Songlist und Vorträge", "Rollenspiele"],
+                "answer": 1
+            },
+            {
+                "question": "Woran erkennt man den kinästhetischen Lerntyp?",
+                "options": ["Lernt durch Bewegung und Ausprobieren", "Lernt durch Zuhören", "Lernt mit Schaubildern"],
+                "answer": 0
+            },
+            {
+                "question": "Welche Aussage beschreibt einen Mischtyp?",
+                "options": [
+                    "Ich lerne nur durch Lesen.",
+                    "Ich kombiniere verschiedene Methoden.",
+                    "Ich lerne am besten mit Musik."
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Warum ist es hilfreich, seinen eigenen Lerntyp zu kennen?",
+                "options": [
+                    "Um andere besser bewerten zu können",
+                    "Um Lernstrategien gezielt auswählen zu können",
+                    "Um mehr Prüfungen schreiben zu müssen"
+                ],
+                "answer": 1
+            }
+        ]
+    },
+    {
+        "level": 2,
+        "title": "Lernumgebung & Lernorganisation",
+        "avatar": "avatar_level2.png",
+        "avatarSuccess": "avatar_level2_happy.png",
+        "avatarFail": "avatar_level2_sad.png",
+        "questions": [{
+                "question": "Was fördert laut Forschung die Konzentration beim Lernen?",
+                "options": ["Handymusik im Hintergrund", "Ein ruhiger, aufgeräumter Arbeitsplatz", "Lernen im Bett"],
+                "answer": 1
+            },
+            {
+                "question": "Was zählt zur guten Lernorganisation?",
+                "options": ["Spontanes Lernen ohne Plan", "Lernplan mit festen Zeiten", "Lernen, wenn man Lust hat"],
+                "answer": 1
+            },
+            {
+                "question": "Wie lang sollte eine Lernpause mindestens dauern?",
+                "options": ["1 Minute", "5–10 Minuten", "60 Minuten"],
+                "answer": 1
+            },
+            {
+                "question": "Was hilft beim Zeitmanagement?",
+                "options": ["Prokrastinieren", "To-do-Liste und Zeitblöcke", "Alles auf einmal erledigen"],
+                "answer": 1
+            },
+            {
+                "question": "Was stört oft die Konzentration beim Lernen?",
+                "options": ["Strukturierte Aufgaben", "Push-Nachrichten vom Handy", "Lernziele notieren"],
+                "answer": 1
+            },
+            {
+                "question": "Warum sind Lernroutinen hilfreich?",
+                "options": ["Sie machen das Lernen planbar", "Sie ersetzen das Lernen", "Sie verhindern Pausen"],
+                "answer": 0
+            }
+        ]
+    },
+    {
+        "level": 3,
+        "title": "Gehirngerechtes Lernen & Arbeitsgedächtnis",
+        "avatar": "avatar_level3.png",
+        "avatarSuccess": "avatar_level3_happy.png",
+        "avatarFail": "avatar_level3_sad.png",
+        "questions": [{
+                "question": "Was versteht man unter 'Chunking'?",
+                "options": [
+                    "Pausen beim Lernen",
+                    "Lernen durch Bewegung",
+                    "Gliederung großer Inhalte in sinnvolle Einheiten"
+                ],
+                "answer": 2
+            },
+            {
+                "question": "Was unterstützt das Langzeitgedächtnis am besten?",
+                "options": ["Intensives Kurzzeitlernen", "Wiederholung in Abständen", "Nur einmaliges Durchlesen"],
+                "answer": 1
+            },
+            {
+                "question": "Was passiert im Arbeitsgedächtnis?",
+                "options": [
+                    "Langfristige Speicherung von Wissen",
+                    "Verarbeitung und kurzfristiges Behalten",
+                    "Automatisches Lernen im Schlaf"
+                ],
+                "answer": 1
+            },
+            {
+                "question": "Warum ist Multitasking beim Lernen ungünstig?",
+                "options": ["Es spart Zeit", "Es verbessert den Fokus", "Es verringert die Aufmerksamkeit"],
+                "answer": 2
+            },
+            {
+                "question": "Wie viel Information kann das Arbeitsgedächtnis gleichzeitig etwa speichern?",
+                "options": ["2–3 Einheiten", "5–9 Einheiten", "20–30 Einheiten"],
+                "answer": 1
+            },
+            {
+                "question": "Was ist ein gutes Beispiel für gehirngerechtes Lernen?",
+                "options": ["Durchlernen ohne Pause", "Visualisierung und Wiederholung", "Spontanes Raten"],
+                "answer": 1
+            }
+        ]
+    }
+]

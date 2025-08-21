@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Persönlichkeitstest Lerntyp</title>
+    <link rel="icon" type="image/x-icon" href="../001favicon/Sophie Diversity.jpg">
+    <link rel="stylesheet" href="ptest_style.css" />
+    <link href="../my_bplaced/assets/09 font/Gilda_Display/GildaDisplay-Regular.ttf" rel="stylesheet" type="text/css">
+    <link href="../my_bplaced/assets/09 font/LeagueSpartan-Bold.otf" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Playful+Display&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1>Persönlichkeitstest: Finde deinen individuellen Lerntyp</h1>
+
+    <div id="quiz-container"></div>
+
+    <div id="result" class="hidden"></div>
+
+    <div id="answer-summary" class="hidden"></div>
+
+    <div id="email-section" class="hidden">
+        <h3>Erhalte dein ausführliches Test-Ergebnis per E-Mail</h3>
+        <input type="email" id="email" placeholder="Deine E-Mail-Adresse" />
+        <button id="submit-email">Absenden</button>
+        <p id="email-confirmation" class="hidden">Danke! Deine E-Mail wurde gespeichert.<br> Dein ausführliches Test-Ergebnis findest Du in Deinem Email-Postfach!</p>
+    </div>
+
+    <button id="reset-btn" class="hidden">Test zurücksetzen</button>
+
+    <button id="btn-back">Zurück zur Startseite</button>
+
+    <div id="lead-modal" class="hidden modal-box">
+        <p>Möchtest du dein individuelles Lerntyp-Ergebnis als PDF erhalten?</p>
+        <input type="email" id="lead-email" placeholder="E-Mail eingeben">
+        <button id="send-lead">Ja, bitte</button>
+        <button id="skip-lead">Nein, zurück zur Startseite</button>
+    </div>
+
+    <script src="ptest_script.js"></script>
+</body>
+
+</html>

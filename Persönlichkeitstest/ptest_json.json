@@ -1,0 +1,49 @@
+{
+    "questions": [{
+            "question": "Wie merkst du dir neue Inhalte am besten?",
+            "answers": [
+                { "text": "Ich spreche sie laut aus", "type": "Auditiv" },
+                { "text": "Ich schreibe sie auf oder mache Skizzen", "type": "Visuell" },
+                { "text": "Ich bewege mich dabei oder wende sie direkt an", "type": "Kinästhetisch" }
+            ]
+        },
+        {
+            "question": "Was hilft dir beim Verstehen komplexer Inhalte?",
+            "answers": [
+                { "text": "Ein erklärender Podcast", "type": "Auditiv" },
+                { "text": "Eine gute Grafik oder Mindmap", "type": "Visuell" },
+                { "text": "Ein praktisches Beispiel oder Rollenspiel", "type": "Kinästhetisch" }
+            ]
+        },
+        {
+            "question": "Wie sieht dein Lernplatz aus?",
+            "answers": [
+                { "text": "Ich habe Karteikarten mit Zeichnungen", "type": "Visuell" },
+                { "text": "Ich nehme Inhalte als Sprachnotizen auf", "type": "Auditiv" },
+                { "text": "Ich wechsle oft die Position oder arbeite im Stehen", "type": "Kinästhetisch" }
+            ]
+        },
+        {
+            "question": "Was trifft am ehesten auf dich zu?",
+            "answers": [
+                { "text": "Ich erinnere mich an den Klang von Erklärungen", "type": "Auditiv" },
+                { "text": "Ich denke in Bildern", "type": "Visuell" },
+                { "text": "Ich brauche Bewegung beim Denken", "type": "Kinästhetisch" }
+            ]
+        },
+        {
+            "question": "Wie würdest du deinen Lernstil beschreiben?",
+            "answers": [
+                { "text": "Ich kombiniere verschiedene Methoden", "type": "Mischtyp" },
+                { "text": "Ich bleibe lieber bei dem, was für mich funktioniert", "type": "Spezifisch" }
+            ]
+        }
+    ],
+    "results": {
+        "Auditiv": "🎧 Du bist ein auditiver Lerntyp – du lernst am besten durch Hören, Erklären und Zuhören.",
+        "Visuell": "🖼️ Du bist ein visueller Lerntyp – du verstehst Inhalte besonders gut durch Bilder, Grafiken und Schrift.",
+        "Kinästhetisch": "🏃 Du bist ein kinästhetischer Lerntyp – du lernst durch Bewegung, Handlung und praktische Erfahrungen.",
+        "Mischtyp": "🔄 Du bist ein Mischtyp – du kombinierst verschiedene Strategien und passt dich flexibel an.",
+        "Spezifisch": "🧭 Du hast einen bevorzugten Lernweg, der gut für dich funktioniert – vertraue auf deine Strategie."
+    }
+}
