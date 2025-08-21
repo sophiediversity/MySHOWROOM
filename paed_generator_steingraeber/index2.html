@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pädagogik-Generator</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Externes CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Pädagogik-Generator</h1>
+      <p class="subtitle">Individualisierte Lernstrategien für optimalen Bildungserfolg</p>
+    </div>
+
+    <div class="input-section">
+      <div class="form-group">
+        <label for="thema"><h2>Lernthema eingeben:</h2></label>
+        <input type="text" id="thema" placeholder="z.B. Nachhaltigkeit, Mathematische Grundlagen, Konfliktlösung...">
+      </div>
+
+      <div class="form-group">
+        <h2>Gewünschte Aktion/Verhalten (Feinziel)</h2>
+        <input type="text" id="aktion" placeholder="z.B. erklären, berechnen, analysieren, anwenden...">
+      </div>
+
+      <div class="form-group">
+        <label><h2>Hauptherausforderung anklicken:</h2></label>
+        <div class="reason-grid">
+          <div class="reason-option">
+            <input type="radio" id="reason-a" name="reason" value="a">
+            <label for="reason-a" class="reason-label">Fehlendes Wissen</label>
+          </div>
+          <div class="reason-option">
+            <input type="radio" id="reason-b" name="reason" value="b">
+            <label for="reason-b" class="reason-label">Fehlende Übung</label>
+          </div>
+          <div class="reason-option">
+            <input type="radio" id="reason-c" name="reason" value="c">
+            <label for="reason-c" class="reason-label">Fehlende Motivation</label>
+          </div>
+          <div class="reason-option">
+            <input type="radio" id="reason-d" name="reason" value="d">
+            <label for="reason-d" class="reason-label">Rahmenbedingungen</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="generate-btn" onclick="generateSolution()">Inspiration Generieren</button>
+    </div>  
+
+    <!-- Rechte Spalte: Ergebnis -->
+    <div class="right-column" id="result">  
+      <div id="output-content"></div>
+      <p>INSPIRATION für pädagogische Planung</p>
+    </div>
+  </div>
+
+  <!-- Externes JS -->
+  <script src="script.js"></script>
+</body>
+</html>
