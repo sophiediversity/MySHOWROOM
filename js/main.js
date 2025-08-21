@@ -133,7 +133,7 @@
         // Add an event listener listening for scroll
         window.addEventListener('scroll', navHighlight);
 
-     function navHighlight() {
+     /*function navHighlight() {
 
     let scrollY = window.pageYOffset;
 
@@ -149,7 +149,7 @@
             link.parentNode.classList.add('current');
         } else {
             link.parentNode.classList.remove('current');
-        }
+        }*/
     });
 }
 
