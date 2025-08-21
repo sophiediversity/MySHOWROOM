@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fang die Welt!</title>
+    <link rel="icon" type="image/x-icon" href="assets/00_favicon/Favicon_finger.png" ;>
+
+    <style>
+        @font-face {
+            font-family: 'GildaDisplay-Regular';
+            src: url('fonts/Gilda_Display/GildaDisplay-Regular.ttf') format('truetype')";
+
+        }
+        
+        @font-face {
+            font-family: 'LeagueSpartan';
+            src: url('fonts/league_spartan/LeagueSpartan-Bold.otf') format('opentype');
+        }
+        
+        body {
+            margin: 0;
+            overflow: hidden;
+            color: #fff;
+            background: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'GildaDisplay-Regular', serif;
+        }
+        
+        h1 {
+            margin: 20px;
+            font-family: 'LeagueSpartan-Bold', sans-serif;
+        }
+        
+        #scoreboard {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        
+        #circle {
+            width: 60px;
+            height: 60px;
+            background-color: #db9d33;
+            border-radius: 50%;
+            position: absolute;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        /* 🔄 Optional: Bild als Ziel */
+        
+    #circle {
+      background-image: url('logo_animation/Weltkugel.png');
+      background-size: cover;
+    
+    }
+    */
+        
+        #start-button {
+            padding: 10px 20px;
+            font-size: 1em;
+            background: #2ecc71;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎯 Fang die Welt!</h1>
+    <div id="scoreboard">Punkte: 0 | Zeit: 10</div>
+    <button id="start-button">Start</button>
+    <div id="circle" style="display: none;"></div>
+
+    <script>
+        const circle = document.getElementById('circle');
+        const scoreboard = document.getElementById('scoreboard');
+        const startButton = document.getElementById('start-button');
+
+        let score = 0;
+        let timeLeft = 10;
+        let gameInterval;
+        let countdownInterval;
+
+        function moveCircle() {
+            const maxX = window.innerWidth - 60;
+            const maxY = window.innerHeight - 60;
+            const randomX = Math.random() * maxX;
+            const randomY = Math.random() * maxY;
+
+            circle.style.left = `${randomX}px`;
+            circle.style.top = `${randomY}px`;
+        }
+
+        function startGame() {
+            score = 0;
+            timeLeft = 10;
+            scoreboard.textContent = `Punkte: ${score} | Zeit: ${timeLeft}`;
+            startButton.style.display = 'none';
+            circle.style.display = 'block';
+
+            moveCircle();
+
+            // Klick gibt Punkt und versetzt Kreis
+            circle.onclick = () => {
+                score++;
+                scoreboard.textContent = `Punkte: ${score} | Zeit: ${timeLeft}`;
+                moveCircle();
+                circle.style.transform = 'scale(1.2)';
+                setTimeout(() => {
+                    circle.style.transform = 'scale(1)';
+                }, 100);
+            };
+
+            // Bewegung jede Sekunde
+            gameInterval = setInterval(moveCircle, 1000);
+
+            // Countdown starten
+            countdownInterval = setInterval(() => {
+                timeLeft--;
+                scoreboard.textContent = `Punkte: ${score} | Zeit: ${timeLeft}`;
+                if (timeLeft <= 0) {
+                    endGame();
+                }
+            }, 1000);
+        }
+
+        function endGame() {
+            clearInterval(gameInterval);
+            clearInterval(countdownInterval);
+            circle.style.display = 'none';
+            startButton.style.display = 'inline-block';
+            scoreboard.textContent = `🎉 Spiel vorbei! Du hast ${score} Punkte erreicht.`;
+        }
+
+        startButton.addEventListener('click', startGame);
+    </script>
+</body>
+
+</html>

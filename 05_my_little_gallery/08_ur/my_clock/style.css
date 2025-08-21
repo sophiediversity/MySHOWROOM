@@ -1,0 +1,36 @@
+.gilda-display-regular {
+  font-family: "Gilda Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Gilda Display", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+canvas {
+  border: 2px solid white;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  font-family: "Gilda Display", serif;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
