@@ -1,0 +1,121 @@
+/* Container für Bilder + Text nebeneinander */
+#mockups .gallery-item {
+  display: flex !important;       /* überschreibt Template */
+  flex-wrap: wrap;                /* bricht auf kleineren Bildschirmen um */
+  align-items: center;            /* vertikal mittig */
+  justify-content: center;        /* zentriert horizontal */
+  gap: 2rem;
+}
+
+/* Bilder nebeneinander */
+#mockups .gallery-images {
+  display: flex !important;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Bilder skalieren */
+#mockups .gallery-images img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* Textbereich */
+#mockups .gallery-text {
+  flex: 1;
+  max-width: 400px; /* optional, damit es nicht zu breit wird */
+}
+
+.img-right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right;
+}
+
+
+
+   /*Text-Rotator*/
+
+#Service {
+  display: flex;
+  justify-content: center;   /* Block in der Mitte platzieren */
+ 
+}
+
+#Service h2 {
+  text-align: left;       /* zentriert den Text */
+  font-size: 10rem;          /* optional: etwas größer */
+  margin:left 50px;
+  justify-content:center;
+ 
+}
+
+
+.word-container {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  text-align: center;
+  height: 1.2em; /* Höhe anpassen, falls nötig */
+  justify-content:center;
+ }
+#text-rotator-container h2{
+  margin:left 50px,50px;
+  justify-content:center;
+ 
+
+}
+
+h2, .h2 {
+  font-size: var(--type-size-h2);
+  line-height: var(--type-line-height-headings-alt);
+  letter-spacing: var(--type-spacing-headings-alt);
+  justify-content:center;
+}
+
+h2, .h2, h3, .h3 {
+  margin-top: var(--vspace-2);
+  margin-bottom: var(--vspace-0_75);
+    justify-content:center;
+}
+
+.word {
+  display: block;
+  color:#366b5b;  
+
+  text-align:center;
+  animation: slide 8s infinite;
+  justify-content: center;
+}
+
+@keyframes slide {
+  0% { transform: translateY(0%); }
+  20% { transform: translateY(0%); }
+  25% { transform: translateY(-100%); }
+  45% { transform: translateY(-100%); }
+  50% { transform: translateY(-200%); }
+  70% { transform: translateY(-200%); }
+  75% { transform: translateY(-300%); }
+  95% { transform: translateY(-300%); }
+  100% { transform: translateY(0%); }
+ }
+
+ .s-mindblaster__image img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    margin: 2rem 0 0 0; /* nur oberen Abstand lassen */
+}
+.row.s-mindblaster__content {
+    display: flex;
+    align-items: flex-start; /* statt center */
+}
+@media (max-width: 768px) {
+    .s-mindblaster__image {
+        margin-top: 2rem;
+    }
+}
+
+.h3 {color:#366b5b}
+
