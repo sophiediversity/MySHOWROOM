@@ -131,7 +131,7 @@
         if (!sections) return;
 
         // Add an event listener listening for scroll
-        window.addEventListener('scroll', navHighlight);
+        //window.addEventListener('scroll', navHighlight);
 
      /*function navHighlight() {
 
@@ -149,10 +149,10 @@
             link.parentNode.classList.add('current');
         } else {
             link.parentNode.classList.remove('current');
-        }*/
+        }
     });
 }
-
+*/
 
     }; // end ssScrollSpy
 
