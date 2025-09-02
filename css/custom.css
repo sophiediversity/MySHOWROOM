@@ -121,11 +121,11 @@ h2, .h2, h3, .h3 {
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 Format */
+  padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
-  max-width: 800px; /* maximale Breite */
-  margin: 0 auto;   /* mittig */
+  max-width: 1000px;  /* schön groß */
+  margin: 0 auto;     /* mittig */
 }
 
 .video-wrapper iframe {
@@ -136,6 +136,8 @@ h2, .h2, h3, .h3 {
   height: 100%;
   border: 0;
 }
+
+
 
 
 
