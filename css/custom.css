@@ -119,3 +119,23 @@ h2, .h2, h3, .h3 {
 
 .h3 {color:#366b5b}
 
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Format */
+  height: 0;
+  overflow: hidden;
+  max-width: 800px; /* maximale Breite */
+  margin: 0 auto;   /* mittig */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
